@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: white;
+  font-family: "Poppins", serif;
+}
+ul {
+  list-style: none;
+}
+.full-body {
+  display: flex;
+  height: 95vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.body-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  margin-top: 100px;
+  /* display: none; */
+}
+.chat-container {
+  max-width: 1000px;
+  padding: 2px 5px;
+  display: none;
+}
+.chat-container ul {
+  padding: 2px 2px;
+  border: 1px solid #444654;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+.chat-container ul li {
+  padding: 5px 10px;
+}
+.ques {
+}
+.ans {
+  background-color: #444654;
+}
+.icon {
+  width: 100px;
+  border-radius: 50%;
+}
+.search-topic {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  position: fixed;
+  justify-content: center;
+}
+.topic {
+  /* display: none; */
+}
+.search-box {
+  display: flex;
+  column-gap: 5px;
+  background: black;
+}
+.search-input {
+  background: black;
+  border: 1px solid #444654;
+  outline: none;
+  padding: 5px 8px;
+  border-radius: 13px;
+  color: white;
+  width: 600px;
+  resize: none;
+}
+.submit-btn,
+.delete-btn {
+  border-radius: 50%;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.suggetions {
+  display: none;
+  border: 1px solid #ccc;
+  background: #fff;
+  max-width: 600px;
+  overflow-y: scroll;
+  color: black;
+  position: absolute;
+  bottom: 200px;
+}
+.suggetions li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 600px) {
+  .search-input {
+    width: 100%;
+  }
+}
